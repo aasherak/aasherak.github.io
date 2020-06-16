@@ -1,0 +1,590 @@
+html {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+	margin: 0;
+}
+
+/*------------------------------------------------------------------*/
+header {
+	top: 0;
+	position: fixed;
+	width: 100%;
+	min-width: 500px;
+}
+
+header ul {
+	background: #f63242;
+	margin-top: 0;
+	height: 50px; 
+	padding-left: 0px;
+	/*padding-top: 16px;*/
+	padding: 0;
+	/*margin-bottom: 50px;*/
+}
+
+header li {
+	display: inline-block;
+	padding: 10px 16px;
+	height: 50px;
+	box-sizing: border-box;
+}
+
+header li a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.4em;
+}
+
+header li:hover {
+	background: rgb(56, 44, 67);
+}
+
+/*------------------------------------------------------------------*/
+
+.heading {
+	padding: 100px 10px 200px;
+	background: url(modified.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-width: 450px;
+}
+
+.heading h1 {
+	color: white;
+	text-align: center;
+	font-size: 4em;
+}
+
+.heading .hor {
+	border: none;
+	background: #f63242;
+	height: 2px;
+	width: 55%;
+	margin: 0 auto;
+}
+
+.heading p {
+	color: white;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.heading ul, .foot ul {
+	padding-left: 0;
+	text-align: center;
+}
+
+.heading li, .foot li {
+	display: inline;
+	padding: 0;
+	padding: 8px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 1.5em;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+/*.fa-gmail {
+	color: white;
+}*/
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter{
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin{
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram{
+  background: #55ACEE;
+}
+
+
+/*------------------------------------------------------------------*/
+
+.aboutme {
+	background: rgba(50, 43, 69, 1);
+	border-top: solid;
+	border-top-width: 2px;
+	border-top-color: #f63242;
+	padding: 70px 10px 100px;
+	min-width: 450px;
+}
+
+.aboutme h2 {
+	margin-top: 0;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+
+.aboutme p {
+	width: 75%;
+	color: white;
+	margin: 0 auto;
+	font-size: 1.2em;
+}
+
+
+/*------------------------------------------------------------------*/
+
+.skill {
+	background: rgba(50, 43, 69, 1);
+	border-top: solid;
+	border-top-width: 2px;
+	border-top-color: #f63242;
+	padding: 70px 10px 100px;
+	min-width: 450px;
+}
+
+.skill h2 {
+	margin-top: 0;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	font-weight: 600;
+}
+
+@media only screen and (min-width: 850px){
+	.skill .container {
+		margin: 0 20px;
+	}
+
+	.container {
+		display: grid;
+		width: 95%;
+		margin: 0 auto;
+		padding: 50px 0px;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 10px;
+		grid-row-gap: 30px;
+	}
+
+	.skill .container img {
+		display: block;
+		height: 150px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 849.9px){
+	.skill .container {
+		margin: 0 20px;
+	}
+
+	.container {
+		display: grid;
+		width: 95%;
+		margin: 0 auto;
+		padding: 50px 0px;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
+		grid-row-gap: 30px;
+	}
+
+	.skill .container img {
+		display: block;
+		height: 150px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 550px){
+	.skill .container {
+		margin: 0 20px;
+	}
+
+	.container {
+		display: grid;
+		width: 95%;
+		margin: 0 auto;
+		padding: 50px 0px;
+		grid-template-columns: 1fr;
+		grid-column-gap: 10px;
+		grid-row-gap: 30px;
+	}
+
+	.skill .container img {
+		display: block;
+		height: 150px;
+		margin: 0 auto;
+	}
+}
+
+/*------------------------------------------------------------------*/
+
+.project {
+	background: url(proback.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	border-top: solid;
+	border-top-width: 2px;
+	border-top-color: #f63242;
+	padding: 70px 10px 100px;
+	min-width: 450px;
+}
+
+.project h2 {
+	margin-top: 0;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	font-weight: 600;
+}
+
+.prowrapper {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 60px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+	grid-row-gap: 40px;
+	grid-column-gap: 20px;
+}
+
+.prowrapper div {
+	border-top: solid;
+	border-top-width: 2px;
+	border-top-color: #f63242;
+}
+
+.prowrapper p {
+	text-align: center;
+	color: white;
+	font-size: 1.1em;
+	padding: 10px;
+}
+
+.prowrapper h4 {
+	text-align: center;
+	color: white;
+	font-weight: 500;
+	font-size: 1.4em;
+}
+
+
+@media only screen and (max-width: 600px){
+
+	.prowrapper {
+		grid-template-columns: 1fr; 
+	}
+
+
+}
+
+
+
+/*-----------------------------------------------------------*/
+
+.awards {
+	background: url(aback.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-top: solid;
+	border-top-width: 2px;
+	border-top-color: #f63242;
+	padding: 70px 10px 100px;
+	min-width: 450px;
+}
+
+.awards h2 {
+	margin-top: 0;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+
+.awards h4 {
+	color: white;
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.4em;
+	width: content;
+}
+
+.awrapper {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 60px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+	grid-row-gap: 40px;
+	grid-column-gap: 20px;
+}
+
+.awrapper div {
+	border-top: solid;
+	border-top-width: 2px;
+	border-top-color: #f63242;
+}
+
+.awrapper p {
+	text-align: center;
+	color: white;
+	font-size: 1.1em;
+	font-weight: 400;
+	padding:  0 10px;
+}
+
+@media only screen and (max-width: 600px){
+
+	.awrapper {
+		grid-template-columns: 1fr; 
+	}
+
+
+}
+
+/*----------------------------------------------------------------------*/
+
+.foot {
+	background: #23252f;
+	border-top: solid;
+	border-top-width: 2px;
+	border-top-color: #f63242;
+	padding: 70px 10px 100px;
+	min-width: 450px;
+	text-align: center;
+}
+
+.foot a {
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+}
+
+.foot h2 {
+	margin-top: 0;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*html{
+	font-family: 'Source Sans Pro', sans-serif;
+	background: url(modified.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+.heading{
+	margin: 0 auto;
+	margin-top: 150px;
+	text-align: center;
+	color: white;
+	font-size: 2.5em;
+	min-width: 300px;
+}
+
+.hor{
+	width: 55%;
+	min-width: 200px;
+	margin: 0 auto;
+	height: 3px;
+	border: none;
+	background: #b31b27;
+}
+
+h1{
+	margin-bottom: 40px;
+}
+
+ul{
+	list-style-type: none;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	margin-top: 40px;
+	min-width: 300px;
+}
+
+li{
+	display: inline;
+	padding: 8px;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+ul a{
+	text-decoration: none;
+	font-size: 1.75em;
+	color: white;
+	font-weight: 500;
+}
+
+li:hover{
+	background: #f63242;
+}
+
+li:hover a{
+	color: white;
+}
+
+
+
+@media only screen and (max-width: 578px){
+	ul a{
+		text-decoration: underline;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* html{
+	font-family: 'Source Sans Pro', sans-serif;
+	background: url(modified.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+
+
+.jcenter{
+	text-align: center;
+	font-size: 2.5em;
+	margin: 0 auto;
+	margin-top: 175px;
+	margin-bottom: 5px;
+	color: white;
+	font-weight: 900;	
+	min-width: 350px;
+	opacity: 1;
+}
+
+/* h1{
+	margin-bottom: 40px;
+}
+
+.hor{
+	width: 65%;
+	margin: 10px auto;
+}
+
+hr{
+	height: 2px;
+	border: none;
+	background-color: #f63242;
+}
+
+
+a{
+	color: #f63242;
+	font-size: 2em;
+
+}
+
+ul{
+	text-align: center;
+	justify-content: center;
+	padding-left: 0px;
+	min-width: 350px;
+	margin-top: 20px;
+}
+
+
+li{
+	display: inline;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	list-style-type: none;
+}
+
+li:hover{
+	background: #f63242;
+}
+
+li:hover a{
+	color: white;
+}
+
+/**/
