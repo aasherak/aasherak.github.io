@@ -7,12 +7,14 @@ body{
 	margin: 0;
 }
 
+
 /*------------------------------------------------------------------*/
 header {
 	top: 0;
 	position: fixed;
 	width: 100%;
 	min-width: 500px;
+	z-index: 999;
 }
 
 header ul {
@@ -256,16 +258,67 @@ header li:hover {
 	margin: 0 auto;
 	padding-top: 60px;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto auto;
-	grid-row-gap: 40px;
+	grid-row-gap: 20px;
 	grid-column-gap: 20px;
+
+	perspective: 1000px;
 }
 
-.prowrapper div {
-	border-top: solid;
-	border-top-width: 2px;
-	border-top-color: #f63242;
+.prowrapper > div {
+	background: ;
+	border: solid;
+	border-width: 2px;
+	border-color: #f63242;
+	height: 300px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	transition: transform 0.5s;
+  	transform-style: preserve-3d;
+}
+
+.prowrapper .pro1 {
+	background: url(logos/plogo.jpg);
+	background-position: center;
+}
+
+.prowrapper .pro2 {
+	background: url(logos/elogo.jpg);
+	background-position: center;
+}
+
+.prowrapper .pro3 {
+	background: url(logos/alogo.jpg);
+	background-size: cover;
+}
+
+.prowrapper .pro4 {
+	background: url(logos/ologo.jpg);
+	background-position: center;
+}
+
+.prowrapper .content {
+	display: none;
+}
+
+.prowrapper > div:hover .content {
+	display: block;
+} 
+
+.prowrapper > div:hover h4 {
+	display: none;
+} 
+
+.prowrapper > div:hover{
+  transform: rotateY(180deg);
+  background: none;
+  cursor: pointer;
+}
+
+.prowrapper .content{
+	transform: rotateY(180deg);
 }
 
 .prowrapper p {
@@ -280,10 +333,22 @@ header li:hover {
 	color: white;
 	font-weight: 500;
 	font-size: 1.4em;
+	margin: 0;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1300px) and (min-width: 799px){
+
+	.prowrapper {
+		grid-template-columns: 1fr 1fr;
+		margin: 0 auto;
+	}
+}
+
+
+@media only screen and (max-width: 798px){
 
 	.prowrapper {
 		grid-template-columns: 1fr; 
