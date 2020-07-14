@@ -14,12 +14,15 @@ body{
 	z-index: 999;
 	display: inline-block;
 	width: 100%;
-	height: 95px;
-	background: #f63242;
+	height: 75px;
+	background: #322b45/*#f63242*/;
 	position: fixed;
 	box-sizing: border-box;
 	padding-right: 10px;
 	padding-left: 10px;
+	border-bottom: solid;
+	border-bottom-width: 4px;
+	border-bottom-color: #f63242;
 	/*padding-top: 15px;
 	padding-bottom: 15px;*/
 }
@@ -52,8 +55,8 @@ body{
 
 .menubar .list li {
 	display: inline-block;
-	height: 90px;
-	padding: 30.6px 16px 30.6px 16px;
+	height: 75px;
+	padding: 27.5px 16px 27.5px 16px;
 	box-sizing: border-box;
 }
 
@@ -66,7 +69,7 @@ body{
 
 
 .menubar li:hover a{
-	color: rgb(50, 43, 69);
+	color: #f63242/*rgb(50, 43, 69)*/;
 }
 
 
@@ -99,12 +102,19 @@ body{
 		background: none;
 		border: none;
 		cursor: pointer;
+		padding: 0;
+		top: 0;
 	}
 
 	.menubar .active  ul {
 		display: block;
+		left: 0;
 		padding: 20px 30px;
-		background: rgb(50, 43, 69);
+		background: rgb(50, 43, 69) /*#f63242*/;
+		border: solid;
+		border-width: 4px;
+		border-color: #f63242;
+		border-bottom: none;
 	}
 
 	.menubar .dropdowns li {
@@ -118,8 +128,9 @@ body{
 		height: 100%;
 		margin: 0;
 		padding: 0;
-		padding-top: 7.5px;
-		padding-bottom: 7.5px;
+		padding: 27.5px 0 22px;
+/*		padding-top: 7.5px;
+		padding-bottom: 7.5px;*/
 		box-sizing: border-box;
 		vertical-align: top;
 		text-align: right;
@@ -127,8 +138,8 @@ body{
 
 	.menubar .fa {
 		margin: 0;
-		padding: 29px 0;
-		color: rgb(50, 43, 69);
+		padding: 0px;
+		color: /*rgb(50, 43, 69)*/ #f63242;
 	}
 
 }
@@ -396,10 +407,12 @@ body{
 
 .prowrapper .content {
 	display: none;
+	backface-visibility: hidden;
 }
 
 .prowrapper > div:hover .content {
 	display: block;
+	backface-visibility: hidden;
 } 
 
 .prowrapper > div:hover h4 {
