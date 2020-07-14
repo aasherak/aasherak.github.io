@@ -8,20 +8,50 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="indexcss.css">
+
+
+		<script type="text/javascript">
+			
+			function menu_expand(){
+				document.getElementById('dropdown').classList.toggle('active');
+			}
+
+		</script>
 	</head>
 
 	<body>
 		<header>
-			<nav aria-label="main menu">
-				<ul>
-					<li><a href="#heads">Home</a></li>
-					<!-- <li><a href="#abouts">About</a></li>
- -->				<li><a href="Aasher Akhlaque CV.pdf" target="_blank">Résumé</a></li>
-					<li><a href="#projects">Projects </a></li>
-					<li><a href="#cont">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+			<span class="menubar">
+					<div class="slogo">
+						<img src="logos/slogo.jpg.png" alt="logo" height="65px">
+					</div>
+					<div class="list">
+						<ul>
+							<li><a href="#heads">HOME</a></li>
+							<li><a href="#abouts">ABOUT ME</a></li>
+							<li><a href="Aasher Akhlaque CV.pdf">RÉSUMÉ</a></li>
+							<li><a href="#projects">PROJECTS</a></li>
+							<li><a href="#skills">SKILLS</a></li>
+							<li><a href="#cont">CONTACT</a></li>
+						</ul>
+					</div>
+					<div class="togglemenu">
+						<button type="button" data-toggle="collapse" onclick="menu_expand()">
+	      					<i class="fa fa-bars"></i>
+	      				</button>
+	    			</div>
+	    			<div id="dropdown" class="dropdowns">
+	    				<ul>
+							<li onclick="menu_expand()"><a href="#heads">HOME</a></li>
+							<li onclick="menu_expand()"><a href="#abouts">ABOUT ME</a></li>
+							<li onclick="menu_expand()"><a href="Aasher Akhlaque CV.pdf">RÉSUMÉ</a></li>
+							<li onclick="menu_expand()"><a href="#projects">PROJECTS</a></li>
+							<li onclick="menu_expand()"><a href="#skills">SKILLS</a></li>
+							<li onclick="menu_expand()"><a href="#cont">CONTACT</a></li>
+						</ul>
+	    			</div>
+				</span>
+			</header>
 
 
 		<section id="heads" class="heading">
@@ -48,6 +78,7 @@
 				I am originally from Lahore, Pakistan. Apart from academics, I am fond of sprinting, photography, and travelling.
 			</p>
 		</section>
+
 
 		<section id="projects" class="project">
 
