@@ -395,7 +395,7 @@ body{
 	grid-row-gap: 20px;
 	grid-column-gap: 20px;
 
-	perspective: 10000px;
+	perspective: 1000px;
 }
 
 .prowrapper .cwrap > div {
