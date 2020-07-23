@@ -113,6 +113,7 @@ body{
 		cursor: pointer;
 		padding: 0;
 		top: 0;
+		outline: none;
 	}
 
 	.menubars {
@@ -212,6 +213,10 @@ body{
 	padding: 4px;
 }
 
+.foot ul li a, .heading ul li a {
+	margin: 0;
+}
+
 .fa {
   padding: 20px;
   font-size: 1.5em;
@@ -221,16 +226,12 @@ body{
   margin: 5px 2px;
 }
 
-/*.fa-gmail {
-	color: white;
-}*/
-
 .fa-facebook {
   background: #3B5998;
   color: white;
 }
 
-.fa-twitter{
+.fa-envelope-o{
   background: #55ACEE;
   color: white;
 }
@@ -243,6 +244,22 @@ body{
 .fa-instagram{
   background: #55ACEE;
   color: white;
+}
+
+.fa-github{
+	background: #296d98;
+	color: white;
+}
+
+@media only screen and (max-width: 600px) {
+	.heading li, .foot li {
+		padding: 1.5px;
+	}
+
+	.fa {
+		width: 15px;
+		font-size: 1.25em;
+	}
 }
 
 
@@ -437,11 +454,13 @@ body{
 .prowrapper .content {
 	display: none;
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 .prowrapper .cwrap:hover .content {
 	display: block;
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 } 
 
 .prowrapper .cwrap:hover .inner {
@@ -589,3 +608,4 @@ body{
 	font-weight: 600;
 	padding-bottom: 10px;
 }
+
